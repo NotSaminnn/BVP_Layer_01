@@ -1,0 +1,65 @@
+# LUMENAA - Agentic Multimodal Visual Assistance System
+# Requirements for Conference Submission
+
+# ===== Core Dependencies =====
+numpy>=1.24.0
+opencv-python>=4.9.0.80
+Pillow>=10.0.0
+
+# ===== Deep Learning Frameworks =====
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ===== Computer Vision & Object Detection =====
+ultralytics>=8.0.0
+onnxruntime>=1.15.0
+
+# ===== Large Language Models & VLM =====
+mistralai>=1.0.0
+
+# ===== Face Recognition =====
+facenet-pytorch>=2.5.3
+
+# ===== Audio Processing =====
+# Speech-to-Text (Whisper)
+openai-whisper>=20231117
+sounddevice>=0.4.6
+soundfile>=0.12.1
+
+# Text-to-Speech
+edge-tts>=6.1.13
+pyttsx3>=2.90
+
+# ===== Data Processing & Analysis =====
+pandas>=2.0.0
+scipy>=1.10.0
+matplotlib>=3.5.0
+seaborn>=0.12.0
+
+# ===== NLP & Text Processing =====
+spacy>=3.5.0
+# Note: Run `python -m spacy download en_core_web_sm` after installation
+
+# ===== Async & Event Handling =====
+asyncio>=3.4.3
+
+# ===== Configuration Management =====
+pyyaml>=6.0
+
+# ===== Testing & Evaluation =====
+pytest>=7.0.0
+tqdm>=4.65.0
+
+# ===== Utilities =====
+python-dotenv>=1.0.0
+
+# ===== Optional: For GPU acceleration =====
+# If using CUDA, install PyTorch with CUDA support:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# ===== Installation Notes =====
+# 1. Install requirements: pip install -r requirements.txt
+# 2. Download spaCy model: python -m spacy download en_core_web_sm
+# 3. Set environment variables:
+#    - MISTRAL_API_KEY: Your Mistral AI API key
+# 4. Ensure YOLO model weights are in models/ directory

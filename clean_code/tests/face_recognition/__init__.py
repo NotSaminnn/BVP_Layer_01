@@ -1,0 +1,1 @@
+"""Face recognition accuracy evaluation"""

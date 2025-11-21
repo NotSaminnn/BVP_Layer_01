@@ -1,0 +1,24 @@
+# Ignore downloaded datasets (can be regenerated)
+datasets/
+
+# Ignore large CSV files (>10MB)
+*.csv
+!*_summary.csv
+
+# Ignore visualizations (can be regenerated)
+visualizations/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore logs
+*.log
+
+# Keep directory structure
+!.gitkeep
+!README.md

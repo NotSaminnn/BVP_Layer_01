@@ -1,0 +1,111 @@
+query_id,query_text,category,expected_difficulty,accent,noise_level
+1,What objects are in front of me,object_location,easy,us_neutral,clean
+2,Where is the nearest chair,object_location,easy,us_neutral,clean
+3,How far is the table from me,object_location,medium,us_neutral,clean
+4,Tell me the location of the door,object_location,easy,us_neutral,clean
+5,Where is the laptop on the desk,object_location,medium,us_neutral,clean
+6,Is there a bottle on my right side,object_location,medium,uk_english,clean
+7,Find the nearest exit sign,object_location,medium,uk_english,clean
+8,Where are the books located,object_location,easy,uk_english,clean
+9,Locate the power outlet near the wall,object_location,hard,uk_english,clean
+10,Tell me about objects within arm's reach,object_location,medium,uk_english,clean
+11,Where is the keyboard relative to the mouse,object_location,hard,indian_english,clean
+12,How many chairs are in this room,object_location,medium,indian_english,clean
+13,Is there a cup on the table,object_location,easy,indian_english,clean
+14,Find the nearest window,object_location,easy,indian_english,clean
+15,Where is the trash bin,object_location,easy,indian_english,clean
+16,Locate the phone on the desk,object_location,medium,australian_english,clean
+17,Tell me the distance to the nearest wall,object_location,medium,australian_english,clean
+18,Where is the computer monitor,object_location,easy,australian_english,clean
+19,How far away is the doorknob,object_location,medium,australian_english,clean
+20,Is there a backpack nearby,object_location,easy,australian_english,clean
+21,What direction is the refrigerator,object_location,medium,us_neutral,low_noise
+22,Where can I find the remote control,object_location,medium,us_neutral,low_noise
+23,Locate the light switch on the wall,object_location,medium,uk_english,low_noise
+24,Is there a clock in this room,object_location,easy,uk_english,low_noise
+25,Where is the nearest staircase,object_location,medium,indian_english,low_noise
+26,Tell me about the furniture arrangement,object_location,hard,indian_english,low_noise
+27,Find the water dispenser,object_location,medium,australian_english,low_noise
+28,Where are the fire extinguishers located,object_location,hard,australian_english,low_noise
+29,Locate the printer in this office,object_location,medium,us_neutral,low_noise
+30,How far is the whiteboard from here,object_location,medium,us_neutral,low_noise
+31,Is there a plant in the corner,object_location,easy,uk_english,low_noise
+32,Where is the filing cabinet,object_location,easy,uk_english,low_noise
+33,Find the nearest electrical socket,object_location,medium,indian_english,low_noise
+34,Tell me the position of the desk lamp,object_location,easy,indian_english,low_noise
+35,Where is the calendar on the wall,object_location,easy,australian_english,low_noise
+36,Locate any boxes or packages,object_location,medium,australian_english,low_noise
+37,How many windows are in this space,object_location,medium,us_neutral,low_noise
+38,Where is the coat hanger,object_location,easy,us_neutral,low_noise
+39,Is there a television in front of me,object_location,easy,uk_english,low_noise
+40,Find the nearest seating area,object_location,medium,uk_english,low_noise
+41,Describe what you see in this room,scene_description,easy,us_neutral,clean
+42,What kind of environment am I in,scene_description,easy,us_neutral,clean
+43,Tell me about the overall scene,scene_description,medium,us_neutral,clean
+44,What is the lighting condition here,scene_description,easy,uk_english,clean
+45,Describe the spatial layout of this area,scene_description,hard,uk_english,clean
+46,What activities seem to be happening,scene_description,medium,uk_english,clean
+47,Tell me about the atmosphere of this space,scene_description,medium,indian_english,clean
+48,What type of room is this,scene_description,easy,indian_english,clean
+49,Describe the color scheme and decor,scene_description,medium,indian_english,clean
+50,What does the ceiling look like,scene_description,easy,australian_english,clean
+51,Tell me about the flooring material,scene_description,easy,australian_english,clean
+52,Describe any artwork or decorations,scene_description,medium,australian_english,clean
+53,What is the overall cleanliness level,scene_description,easy,us_neutral,low_noise
+54,Tell me about the temperature and comfort,scene_description,medium,us_neutral,low_noise
+55,Describe the windows and natural light,scene_description,medium,uk_english,low_noise
+56,What safety features do you notice,scene_description,medium,uk_english,low_noise
+57,Tell me about any electronic devices visible,scene_description,medium,indian_english,low_noise
+58,Describe the organizational state of this space,scene_description,hard,indian_english,low_noise
+59,What functional areas exist in this room,scene_description,hard,australian_english,low_noise
+60,Tell me about accessibility features present,scene_description,medium,australian_english,low_noise
+61,What materials are the objects made of,scene_description,medium,us_neutral,low_noise
+62,Describe any potential hazards or obstacles,scene_description,hard,us_neutral,low_noise
+63,What architectural features stand out,scene_description,medium,uk_english,low_noise
+64,Tell me about the furniture style,scene_description,medium,uk_english,low_noise
+65,Describe the overall ambiance and mood,scene_description,hard,indian_english,low_noise
+66,Who is standing in front of me,person_recognition,easy,us_neutral,clean
+67,Is there anyone in this room,person_recognition,easy,us_neutral,clean
+68,Identify the person on my left,person_recognition,medium,us_neutral,clean
+69,Tell me who just entered,person_recognition,medium,uk_english,clean
+70,How many people are present,person_recognition,easy,uk_english,clean
+71,Who is the person near the door,person_recognition,medium,uk_english,clean
+72,Recognize the person talking to me,person_recognition,medium,indian_english,clean
+73,Is John in this room,person_recognition,medium,indian_english,clean
+74,Tell me about the people here,person_recognition,hard,indian_english,clean
+75,Who is sitting at the desk,person_recognition,medium,australian_english,clean
+76,Identify everyone in my field of view,person_recognition,hard,australian_english,clean
+77,Is Sarah nearby,person_recognition,medium,australian_english,clean
+78,Who just walked past me,person_recognition,medium,us_neutral,low_noise
+79,Tell me about the person approaching,person_recognition,medium,us_neutral,low_noise
+80,How many familiar faces do you see,person_recognition,medium,uk_english,low_noise
+81,What is the person wearing,appearance_description,medium,us_neutral,clean
+82,Describe their clothing style,appearance_description,medium,us_neutral,clean
+83,What color shirt are they wearing,appearance_description,easy,us_neutral,clean
+84,Tell me about their physical appearance,appearance_description,hard,uk_english,clean
+85,What accessories do you notice,appearance_description,medium,uk_english,clean
+86,Describe their hairstyle,appearance_description,medium,uk_english,clean
+87,What are they carrying with them,appearance_description,medium,indian_english,clean
+88,Tell me about their posture and body language,appearance_description,hard,indian_english,clean
+89,What expression do they have,appearance_description,medium,indian_english,clean
+90,Describe any distinctive features,appearance_description,hard,australian_english,clean
+91,Read the text on this document,document_reading,easy,us_neutral,clean
+92,What does this sign say,document_reading,easy,us_neutral,clean
+93,Read the label on this product,document_reading,medium,us_neutral,clean
+94,Tell me what's written here,document_reading,easy,uk_english,clean
+95,Summarize this page of text,document_reading,hard,uk_english,clean
+96,What is the heading of this document,document_reading,easy,uk_english,clean
+97,Read the ingredients list,document_reading,medium,indian_english,clean
+98,What does this receipt show,document_reading,medium,indian_english,clean
+99,Tell me the information on this card,document_reading,medium,indian_english,clean
+100,Read the expiration date,document_reading,easy,australian_english,clean
+101,When did I last see my keys,temporal_memory,hard,us_neutral,clean
+102,Where was the phone earlier,temporal_memory,hard,us_neutral,clean
+103,Tell me about the last person who spoke,temporal_memory,medium,uk_english,clean
+104,What happened five minutes ago,temporal_memory,hard,uk_english,clean
+105,When did someone enter the room,temporal_memory,medium,indian_english,clean
+106,Where did I put my bag,temporal_memory,hard,indian_english,clean
+107,What was I doing before this,temporal_memory,hard,australian_english,clean
+108,Who was here earlier,temporal_memory,medium,australian_english,clean
+109,Tell me about recent activity,temporal_memory,hard,us_neutral,low_noise
+110,What changed in this room,temporal_memory,hard,us_neutral,low_noise

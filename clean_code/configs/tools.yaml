@@ -1,0 +1,70 @@
+tools:
+  - name: object_detector
+    description: Detects objects and estimates distance
+    inputs:
+      frames: Frame[]
+      targetClasses?: string[]
+    outputs:
+      objects: DetectedObject[]
+    dependencies: []
+    timeout_ms: 600
+    min_confidence: 0.5
+
+  - name: scene_analysis
+    description: Infers spatial relationships and salient regions
+    inputs:
+      objects: DetectedObject[]
+      query?: string
+    outputs:
+      relations: Relation[]
+      salientRegions: Region[]
+    dependencies: [object_detector]
+    timeout_ms: 800
+
+  - name: document_scan
+    description: OCR with layout extraction
+    inputs:
+      frames: Frame[]
+      roi?: BBox
+    outputs:
+      blocks: OcrBlock[]
+      summary: string
+    dependencies: []
+    timeout_ms: 800
+
+  - name: pixtral_analysis
+    description: "Generates AI-powered visual descriptions. For objects: uses clipped ROI images. For scenes: uses entire frame."
+    inputs:
+      frame: Frame
+      detections?: DetectedObject[]
+      new_track_ids?: int[]
+      scene_mode?: boolean
+    outputs:
+      enhanced_detections?: DetectedObject[]
+      scene_description?: string
+    dependencies: [object_detector]
+    timeout_ms: 2000
+    min_confidence: 0.5
+
+  - name: face_recognition
+    description: "Recognizes faces in person detections and returns names from gallery"
+    inputs:
+      frame: Frame
+      person_objects?: DetectedObject[]
+    outputs:
+      recognized_persons?: DetectedObject[]
+    dependencies: [object_detector]
+    timeout_ms: 1000
+    min_confidence: 0.70
+
+  - name: chatbot
+    description: Synthesizes grounded answers and follow-ups
+    inputs:
+      query: string
+      toolData: object
+      context: object
+    outputs:
+      answer: string
+      nextStep?: string
+    dependencies: []
+    timeout_ms: 600
